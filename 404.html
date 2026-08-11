@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ dark: localStorage.getItem('theme')==='dark'||(!localStorage.getItem('theme')&&window.matchMedia('(prefers-color-scheme: dark)').matches) }" :class="{'dark':dark}" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" sizes="32x32"/>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png"/>
+  <link rel="manifest" href="site.webmanifest"/>
+  <meta name="theme-color" content="#FF6B2B"/>
+  <meta name="robots" content="noindex"/>
+  <title>Page introuvable · Affissou EGBEBI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500&display=swap" rel="stylesheet"/>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{display:['PT Sans','sans-serif'],body:['DM Sans','sans-serif']},colors:{accent:'#FF6B2B','accent-light':'#FF8F5C'}}}}</script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;}
+    html{font-family:'DM Sans',sans-serif;}
+    h1,h2,h3{font-family:'PT Sans',sans-serif;}
+    ::-webkit-scrollbar{width:5px;}::-webkit-scrollbar-track{background:transparent;}::-webkit-scrollbar-thumb{background:#FF6B2B;border-radius:99px;}
+    .btn-primary{position:relative;overflow:hidden;}
+    .btn-primary::after{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:rgba(255,255,255,.18);transform:skewX(-20deg);transition:left .4s cubic-bezier(.4,0,.2,1);}
+    .btn-primary:hover::after{left:160%;}
+  
+/* Justification des textes de contenu (avec cesure automatique, lang="fr"),
+   sauf l'accroche du hero : colonne trop etroite et corps trop gros pour
+   que la justification reste lisible. */
+p.leading-relaxed,
+.prose-article p, .prose-article li,
+.prose-cs p, .prose-cs li{
+  text-align:justify;
+  text-justify:inter-word;
+  -webkit-hyphens:auto;
+  hyphens:auto;
+}
+#hero p.leading-relaxed,
+p.leading-relaxed.mx-auto,
+blockquote p{text-align:left;hyphens:manual;}
+.text-center p.leading-relaxed{text-align:center;hyphens:manual;}
+</style>
+</head>
+<body class="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 font-body antialiased">
+
+  <main class="min-h-screen flex items-center justify-center px-6 relative overflow-hidden">
+    <div class="absolute top-1/4 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+
+    <div class="relative z-10 text-center max-w-lg">
+      <p class="font-display font-bold text-7xl md:text-8xl text-accent mb-4">404</p>
+      <h1 class="font-display font-bold text-3xl md:text-4xl text-zinc-900 dark:text-white mb-4">Cette page n'existe pas</h1>
+      <p class="text-zinc-500 dark:text-zinc-400 leading-relaxed mb-10">Le lien est peut-être ancien, ou l'adresse comporte une faute de frappe. Revenons sur des chemins connus.</p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="index.html" class="btn-primary inline-flex items-center gap-2 bg-accent text-white font-medium px-7 py-3.5 rounded-full hover:bg-accent-light transition-colors text-sm">Retour à l'accueil</a>
+        <a href="projects.html" class="inline-flex items-center gap-2 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors text-sm">Voir les projets</a>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

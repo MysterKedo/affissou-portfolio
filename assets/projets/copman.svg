@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="COPMAN">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#27272a"/><stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="82%" cy="18%" r="60%">
+      <stop offset="0%" stop-color="#FF8F5C" stop-opacity=".55"/><stop offset="100%" stop-color="#FF8F5C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#glow)"/>
+  <g opacity=".16" stroke="#ffffff" stroke-width="1">
+    <path d="M0 190h1200M0 375h1200M0 560h1200M300 0v750M600 0v750M900 0v750"/>
+  </g>
+  <g transform="translate(96 210)">
+    <rect x="0" y="0" width="58" height="6" rx="3" fill="#FF8F5C"/>
+    <text x="0" y="98" font-family="PT Sans, Segoe UI, sans-serif" font-size="74" font-weight="700" fill="#ffffff">COPMAN</text>
+    <text x="0" y="158" font-family="DM Sans, Segoe UI, sans-serif" font-size="32" fill="#a1a1aa">Congrès · inscriptions · paiement en ligne</text>
+  </g>
+  <g transform="translate(96 600)" opacity=".8">
+    <circle cx="8" cy="0" r="8" fill="#FF8F5C"/>
+    <text x="30" y="7" font-family="DM Sans, Segoe UI, sans-serif" font-size="24" fill="#d4d4d8">Affissou EGBEBI</text>
+  </g>
+</svg>

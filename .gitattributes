@@ -1,0 +1,11 @@
+# Normalise les fins de ligne : LF dans le dépôt, adaptées à l'OS au checkout.
+# Évite que Windows/Linux produisent des diffs entiers sur des fichiers inchangés.
+* text=auto eol=lf
+
+# Fichiers binaires : jamais de conversion
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.ico  binary
+*.woff binary
+*.woff2 binary

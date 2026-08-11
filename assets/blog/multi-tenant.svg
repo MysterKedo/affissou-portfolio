@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="SaaS multi-entreprises">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#27272a"/><stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="18%" cy="82%" r="65%">
+      <stop offset="0%" stop-color="#FF6B2B" stop-opacity=".5"/><stop offset="100%" stop-color="#FF6B2B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#glow)"/>
+  <g opacity=".14" stroke="#ffffff" stroke-width="1"><path d="M0 250h1200M0 500h1200M400 0v750M800 0v750"/></g>
+  <g transform="translate(96 300)">
+    <text x="0" y="0" font-family="DM Sans, Segoe UI, sans-serif" font-size="28" letter-spacing="6" fill="#FF6B2B">ARTICLE</text>
+    <text x="0" y="92" font-family="PT Sans, Segoe UI, sans-serif" font-size="70" font-weight="700" fill="#ffffff">SaaS multi-entreprises</text>
+    <text x="0" y="152" font-family="DM Sans, Segoe UI, sans-serif" font-size="32" fill="#a1a1aa">Isoler les données avec Laravel</text>
+  </g>
+</svg>
