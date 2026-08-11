@@ -40,7 +40,7 @@ Le site sera accessible sur `https://<votre-compte>.github.io/<nom-du-depot>/`.
 ## À personnaliser avant publication
 
 - [ ] **Photo** : remplacer `assets/photo-placeholder.svg` par une vraie photo, et mettre à jour le `src` dans `index.html` (2 occurrences) et dans les 3 articles de blog.
-- [ ] **Réseaux sociaux** : les URL LinkedIn, GitHub, Facebook et le numéro WhatsApp sont des valeurs provisoires. À corriger dans `index.html` (section contact + pied de page).
+- [x] **Réseaux sociaux** : LinkedIn, GitHub et Facebook pointent vers les vrais profils. WhatsApp n'est volontairement pas affiché ; pour l'ajouter, remettre un lien `https://wa.me/<indicatif><numéro>` dans le pied de page de `index.html`.
 - [ ] **Témoignages** : les 3 citations de `index.html` sont des textes à remplacer par de vrais retours clients.
 - [ ] **Captures d'écran** : les visuels de `assets/projets/` sont des couvertures génériques ; les remplacer par de vraies captures rendra le portfolio nettement plus convaincant.
 - [ ] **Formulaire de contact** : il passe par [FormSubmit](https://formsubmit.co). Au premier envoi depuis le site en ligne, un mail de confirmation est envoyé à `affissouegbebi@gmail.com` ; il faut cliquer sur le lien pour activer l'adresse. Après envoi, le visiteur est redirigé vers `merci.html` (l'URL absolue exigée par FormSubmit est calculée automatiquement au chargement, rien à modifier après le déploiement).
